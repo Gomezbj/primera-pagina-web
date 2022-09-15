@@ -1,0 +1,542 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;  /*Reset para REMS - 62.5 = 10px de 16px*/
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem; 
+    line-height: 1.8;
+}
+
+/**imagenes globales**/
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 3rem; 
+}
+
+h4{
+    font-size: 2.5rem;
+}
+
+h5{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+/*Header*/
+
+.site-header {
+    background-color: #333333;
+    padding: 0rem 0 1rem 0;
+}
+
+.site-header.inicio{
+background-image: url(../img/presentacion.jpg);
+background-position: center center;
+background-size: cover;
+height: 100vh;
+min-height: 60rem;
+}
+ 
+
+/**Separacion de contenedores**/
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+/*Utilidades*/
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.fw-300{
+    font-weight: 500;
+}
+
+.central-texto {
+    text-align: center;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+.contenido-header h1{
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 60;
+    line-height: 1.5;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    align-items: center;
+
+}
+
+.d-block{
+    display: block!important;
+}
+
+/**botones**/
+
+.boton{
+color: white;
+font-weight: 700;
+text-decoration: none;
+font-size: 1.7rem;
+padding: 1rem 3rem;
+margin-top: 3rem;
+display: inline-block;
+border: none;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-amarillo{
+background-color: #e08709;
+font-weight: 3rem;
+display: block;
+text-align: center;
+}
+
+.boton-mas{
+background-color: #123081;
+font-weight: 4rem;
+}
+
+/*esto sera la navegación*/
+
+.navegando a {
+    color: rgb(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 17px;
+}
+.navegando a:hover{
+    color: rgb(9, 185, 255)
+}
+
+.navegando a:last-of-type{
+    margin: 0;
+}
+
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono-b {
+    flex-basis: calc(33.3% - 1.5rem);
+    text-align: center;
+}
+.primera-parte {
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+}
+.icono-b h3{
+    text-transform: uppercase;
+}
+
+/**Empresa*s*/
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.anuncios{
+    flex-basis: calc(25% - 1rem);
+    border: 1px solid #dbd8d8;
+    background: #e9e7e7;
+}
+
+.contenido-empresas{
+    padding: 2rem;
+}
+
+.contenedor-anuncios h3,
+.contenedor-anuncios p{
+    margin: 0;
+}
+
+.tiempo{
+    color: #71b100;
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+.ver-mas{
+    display: flex;
+    justify-content: center;
+}
+ 
+/* Cursos realizados*/
+
+.contenedor-cursos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cursos{
+    flex-basis: calc(28% - 0.5rem);
+    border: 1px solid #dbd8d8;
+    background: #e9e7e7; 
+}
+
+.contenido-cursos p{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.contenido-cursos h4 {
+    padding: 0 1rem;
+}
+
+.cursos strong {
+    font-size: 2.2rem;
+    line-height: 1;
+    text-decoration-line: underline;
+}
+
+
+/*Informacion de contacto*/
+
+.imagen-contacto {
+    background-image: url(../img/img-contacto.jpg);
+    background-position: center;
+    background-size: cover;
+    height:  40rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacta{
+    display: block;
+    margin: 2rem 35rem 0 0;
+    color: black;
+}
+
+
+.contenido-contacta p {
+    font-size: 2.5rem;
+}
+
+
+/**parte inferior**/
+
+.seccion-inferior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion-inferior .blog {
+    flex-basis: 70%;
+}
+
+.seccion-inferior .testimonios {
+    flex-basis: calc(30% - 2rem);
+}
+
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.entrada-blog:last-of-type {
+    margin-bottom: 0;
+}
+
+.entrada-blog .imagen {
+    flex-basis: 40%;
+}
+
+.entrada-blog .texto-entrada {
+    flex-basis: calc(60% - 3rem);
+}
+
+.blog-cursos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 3rem;
+    margin: 5rem;
+}
+
+.texto-entrada a{
+    color: #000;
+    text-decoration: none;
+}
+
+.decoracion {
+    color: #000;
+    text-decoration: none;
+}
+
+.texto-entrada h3{
+    margin: 0;
+    line-height: 1.2;
+}
+
+.texto-entrada p {
+    margin: 0;
+}
+ 
+.texto-entrada h3::after {
+    content: "";
+    display: block;
+    width: 35rem;
+    height: .5rem;
+    background: #71B100;
+    margin-top: 1rem;
+}
+
+.present .entrada-blog{
+    flex-basis: 35px 25px;
+}
+
+.texto-entrada span{
+    color:"";
+}
+
+/*testimonial*/
+
+.testimonial {
+    background-color: #71B100;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    border-radius: 2rem;
+}
+
+.testimonial blockquote {
+    text-align: -webkit-auto;
+}
+
+.testimonial p {
+    text-align: right;
+    font-size: 2rem;
+}
+
+.imagenes-testimonial {
+    text-align: center;
+}
+
+
+.present {
+    padding: 1.5rem;
+    border-radius: 2rem ;
+    width: auto;
+    height: auto;
+}
+
+span {
+    margin: 2rem;
+}
+
+/*=====  End of Section comment block  ======*/
+
+.site-footer{   
+    background-color: #333333;
+    margin: 3rem auto 0 auto;
+}
+
+.contenedor-footer {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy {
+    margin: 0;
+    color: white;
+}
+
+/*Paginas Internas*/
+
+.contenido-nosotros {
+    display: grid;
+    justify-content:center; 
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 3rem;
+    background-color: #8b8dc0;
+    padding-left: 1rem;
+}
+
+.contenido-nosotros {
+    max-width: 100%;
+    margin-bottom: 5rem;
+}
+
+.sobre-yo {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 0 1rem;
+}
+
+.texto-nosotros blockquote{
+    font-weight: 800;
+    font-size: 2.8rem;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.texto-nosotros {
+    padding: 0 2rem 0 0;
+}
+
+em {
+    font-weight: 900;
+}
+
+.link-universidad {
+    text-decoration: none;
+    font-style: inherit;
+    color: #000980;
+    font-weight: 900;
+}
+
+
+ 
+.entrada-blog-pagina2 {
+    display: flex;
+    padding: 1rem 0 0 0;
+    justify-content: space-evenly;
+    background-color: #d3f1d542;
+    margin: 1rem;
+}
+
+.imagen-cursos {
+    flex-basis: calc(24% - 1.5rem);
+    justify-content: center;
+
+}
+
+.entrada-blog-pagina2 .medidas {
+    display: flex;
+    text-align: center;
+}
+
+
+/* Redes sociales */
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.redes-sociales .redes {
+    width: 6rem;
+    height: 6rem;
+}
+
+
+
+
+/*Estilos contacto*/
+
+.hello-contacto {
+    background-image: url(../img/hello-world-2.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:  45rem;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+
+label {
+    font-weight:700;
+    text-transform: uppercase;
+    display: block;
+}
+
+legend {
+    font-size: 2.2rem;
+    color: #333333
+}
+
+input:not([type="submit"]), 
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1.5rem;
+    color: black;
+}
+
+input [type="radio"]{
+    width: auto;
+    margin: 0;
+    align-items: center;
+}
+
+
+select {
+    -webkit-appearance:none;
+    appearance:none;
+}
+
+textarea{
+    height: 15rem;
+}
+
+.contacto p{
+    font-size: 1.5rem;
+    color: #4f4f4f
+    margin: 2rem 0 0 0;
+}
+
+.forma-contacto {
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
